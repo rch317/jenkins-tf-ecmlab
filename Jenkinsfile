@@ -1,6 +1,7 @@
 node {
     stage('Checkout') {
-        git branch: 'master', credentialsId: 'git_ssh', url: 'git@github.com:rch317/tf-ecmlab.git'
+        //git branch: 'master', credentialsId: 'git_ssh', url: 'git@github.com:rch317/tf-ecmlab.git'
+        git branch: 'master', credentialsId: 'git_ssh', url: 'github.com/rch317/ECM.git'
     }
 
     stage('Build') {
